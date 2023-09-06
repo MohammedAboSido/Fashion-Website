@@ -430,6 +430,55 @@ header {
 
 /* End Designer Section */
 
+/* Start Feedback Section  */
+.feedback {
+  background-color: var(--white-color);
+  margin-bottom: 181px;
+}
+.feedback .feedback-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.feedback .feedback-wrapper .cards-wrapper {
+  margin-top: 109px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 37px;
+}
+.feedback .feedback-wrapper .cards-wrapper .card {
+  flex: 1 434px;
+  height: 253px;
+  padding: 7px 19px 29px;
+  border-radius: 3px;
+  background: #fff;
+  box-shadow: 0px 7px 30px 0px rgba(0, 0, 0, 0.05);
+}
+.feedback .feedback-wrapper .cards-wrapper .card:nth-child(2) {
+  background-color: var(--bg-color);
+}
+.feedback .feedback-wrapper .cards-wrapper .card h4 {
+  color: var(--main-color);
+  font-family: "Arial Rounded MT";
+  font-size: 60px;
+  font-weight: 900;
+}
+.feedback .feedback-wrapper .cards-wrapper .card span {
+  color: var(--main-color);
+  font-family: "Roboto Slab", serif;
+  font-size: 22px;
+  font-weight: 600;
+}
+.feedback .feedback-wrapper .cards-wrapper .card p {
+  color: var(--grey-color);
+  font-size: 16px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  margin-top: 30px;
+}
+/* End Feedback Section  */
+
 /* Start Responsive */
 /* Mobile & Tablet*/
 @media screen and (max-width: 1024px) {
@@ -621,6 +670,34 @@ header {
   }
 
   /* End Designer Section */
+
+  /* Start Feedback Section  */
+  .feedback {
+    margin-bottom: 150px;
+    margin-top: 180px;
+  }
+  .feedback .feedback-wrapper .cards-wrapper {
+    margin-top: 90px;
+    gap: 25px;
+    flex-wrap: wrap;
+  }
+  .feedback .feedback-wrapper .cards-wrapper .card {
+    min-height: 320px;
+    height: 360px;
+    flex: 1 260px;
+  }
+
+  .feedback .feedback-wrapper .cards-wrapper .card h4 {
+    font-size: 55px;
+  }
+  .feedback .feedback-wrapper .cards-wrapper .card span {
+    font-size: 18px;
+  }
+  .feedback .feedback-wrapper .cards-wrapper .card p {
+    font-size: 16px;
+    margin-top: 20px;
+  }
+  /* End Feedback Section  */
 }
 
 /* Desktop */
@@ -804,5 +881,32 @@ header {
   }
 
   /* End Designer Section */
+
+  /* Start Feedback Section  */
+  .feedback {
+    margin-bottom: 150px;
+    margin-top: 180px;
+  }
+  .feedback .feedback-wrapper .cards-wrapper {
+    margin-top: 90px;
+    gap: 25px;
+    flex-wrap: wrap;
+  }
+  .feedback .feedback-wrapper .cards-wrapper .card {
+    height: 320px;
+    flex: 1 260px;
+  }
+
+  .feedback .feedback-wrapper .cards-wrapper .card h4 {
+    font-size: 55px;
+  }
+  .feedback .feedback-wrapper .cards-wrapper .card span {
+    font-size: 18px;
+  }
+  .feedback .feedback-wrapper .cards-wrapper .card p {
+    font-size: 16px;
+    margin-top: 20px;
+  }
+  /* End Feedback Section  */
 }
 /* End Responsive */
