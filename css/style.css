@@ -370,6 +370,66 @@ header {
 
 /* End Products section */
 
+/* Start Designer Section */
+.designer {
+  background-color: var(--white-color);
+  margin-bottom: 250px;
+}
+.designer .designer-wrapper {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.designer .designer-wrapper .cards-wrapper {
+  margin-top: 72px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 25px;
+}
+
+.designer .cards-wrapper .card {
+  width: 430px;
+  border-radius: 3px;
+}
+.designer .card .img-wrapper {
+  height: 534px;
+}
+.designer .card:nth-child(1) .img-wrapper {
+  background-color: #d3e2d7;
+}
+.designer .card .img-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 3px;
+}
+.designer .card .card-details {
+  margin-top: 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+  height: 100px;
+}
+.designer .card .card-details .title {
+  color: var(--secondary-color);
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  font-size: 30px;
+  font-weight: 600;
+}
+.designer .card .card-details .description {
+  color: var(--secondary-color);
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 143%;
+}
+
+/* End Designer Section */
+
 /* Start Responsive */
 /* Mobile & Tablet*/
 @media screen and (max-width: 1024px) {
@@ -513,7 +573,7 @@ header {
     width: 250px;
   }
   .products-wrapper .card-details .card-title {
-    font-size: 18px;
+    font-size: 16px;
   }
 
   .products-wrapper .product-details .price {
@@ -530,6 +590,37 @@ header {
     width: 16px;
   }
   /* End Products section responsive */
+
+  /* Start Designer Section */
+  .designer {
+    margin-bottom: 80px;
+  }
+
+  .designer .designer-wrapper .cards-wrapper {
+    margin-top: 25px;
+    gap: 50px;
+    flex-wrap: wrap;
+  }
+
+  .designer .cards-wrapper .card {
+    flex: 1 250px;
+    min-height: 450px;
+  }
+  .designer .card .img-wrapper {
+    height: 450px;
+  }
+
+  .designer .card .card-details {
+    margin-top: 18px;
+  }
+  .designer .card .card-details .title {
+    font-size: 20px;
+  }
+  .designer .card .card-details .description {
+    font-size: 15px;
+  }
+
+  /* End Designer Section */
 }
 
 /* Desktop */
@@ -683,5 +774,35 @@ header {
     width: 16px;
   }
   /* End Products section responsive */
+
+  /* Start Designer Section */
+  .designer {
+    margin-bottom: 120px;
+  }
+
+  .designer .designer-wrapper .cards-wrapper {
+    margin-top: 34px;
+    flex-wrap: wrap;
+  }
+
+  .designer .cards-wrapper .card {
+    flex: 1 250px;
+    height: 450px;
+  }
+  .designer .card .img-wrapper {
+    height: 450px;
+  }
+
+  .designer .card .card-details {
+    margin-top: 18px;
+  }
+  .designer .card .card-details .title {
+    font-size: 20px;
+  }
+  .designer .card .card-details .description {
+    font-size: 15px;
+  }
+
+  /* End Designer Section */
 }
 /* End Responsive */
