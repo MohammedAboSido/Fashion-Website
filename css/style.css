@@ -1,0 +1,95 @@
+/* Poppins Font */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+/* Rufina Font */
+@import url("https://fonts.googleapis.com/css2?family=Rufina:wght@400;700&display=swap");
+/* Roboto Slab Font */
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@200;300;400;500;600;700;800;900&display=swap");
+
+/* Start Global Style */
+:root {
+  --main-color: #224f34;
+  --secondary-color: #373737;
+  --light-black-color: #454545;
+  --light-green-color: #267d49;
+  --btn-color: #a3f3be;
+  --grey-color: #6f6f6f;
+  --bg-color: #c2efd4;
+  --white-color: #fff;
+}
+
+@font-face {
+  src: ("../fonts/ELEPHNT.TTF");
+  font-family: "Elephant";
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  /* font-family: "Rufina", serif; */
+  /* font-family: "Roboto Slab", serif; */
+  /* font-family: "Elephant", serif; */
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+ul {
+  list-style: none;
+}
+
+.container {
+  max-width: 1380px;
+  width: 85%;
+  margin: 0 auto;
+}
+/* End Global Style */
+
+/* start header */
+header {
+  background-color: var(--bg-color);
+}
+.header-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 55px 0;
+}
+
+.header-wrapper .logo h2 {
+  font-family: "Elephant", serif;
+  font-size: 40px;
+  font-weight: 400;
+  color: var(--main-color);
+}
+
+.header-wrapper nav ul {
+  display: flex;
+  align-items: center;
+  gap: 57px;
+}
+
+.header-wrapper nav ul li a {
+  color: var(--main-color);
+  font-family: "Poppins", sans-serif;
+  font-size: 22px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.header-wrapper .login-btn a {
+  display: inline-block;
+  padding: 11px 41px;
+  border-radius: 3px;
+  border: 2px solid var(--main-color);
+}
+/* End header */
